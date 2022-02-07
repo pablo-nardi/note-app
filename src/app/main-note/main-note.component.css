@@ -1,0 +1,13 @@
+#title-note{
+    background-color: brown;
+    /*border: 3px black solid;*/
+}
+#body-note{
+    background-color: aqua;
+    border-top: 2px black solid;
+}
+
+.contenedor{
+    width: 500px;
+    border: 1px black solid
+}
