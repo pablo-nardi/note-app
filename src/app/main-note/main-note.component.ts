@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-main-note',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainNoteComponent implements OnInit {
 
-  constructor() { }
+  myForm = this.fb.group({
+    title: [],
+    body: []
+  });
+
+  constructor(
+    private fb: FormBuilder
+  ) { }
 
   ngOnInit(): void {
   }
 
+  save(){
+    console.log('hola');
+  }
 }

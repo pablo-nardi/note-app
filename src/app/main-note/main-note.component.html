@@ -1,13 +1,15 @@
 <div class="container-sm d-flex flex-column align-items-center contenedor">
-
+    <form name="myForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="myForm">
+   
 
     <div id="title-note">
-        <input type="text" placeholder="Your title here" id="title">
+        <input type="text" placeholder="Your title here" id="title" formControlName="title">
     </div>
 
     <div id="body-note">
-        <textarea id="body" name="body" rows="4" cols="50">
+        <textarea id="body" name="body" rows="4" cols="50" formControlName="body">
         </textarea>
-    </div>
-
+    </div> 
+    <button>guardar</button>
+</form> 
 </div>
